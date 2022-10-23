@@ -17,8 +17,12 @@
 				"extensions": [".ts"],
 				"root": ["."],
 				"alias": {
-					"~": "./src",
-					"@helper": "./src/util/helper"
+					"@controller": "./src/controller",
+					"@model": "./src/model",
+					"@router": "./src/router",
+					"@helper": "./src/util/helper",
+					"@middleware": "./src/util/middleware",
+					"~": "./src"
 				}
 			}
 		]

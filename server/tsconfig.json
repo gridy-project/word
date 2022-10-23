@@ -12,6 +12,10 @@
 		"baseUrl": ".",
 		"paths": {
 			"~/*": ["src/*"],
+			"@controller/*": ["src/controller"],
+			"@model/*": ["src/model"],
+			"@router/*": ["src/router"],
+			"@middleware/*": ["src/util/middleware"],
 			"@helper/*": ["src/util/helper/*"]
 		},
 		"experimentalDecorators": true

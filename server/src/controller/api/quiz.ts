@@ -1,6 +1,6 @@
 import { Word } from "@prisma/client";
 import { Request, Response } from "express";
-import { word } from "~/models/word";
+import { word } from "~/model/word";
 
 interface IResponseData {
 	result: boolean;
