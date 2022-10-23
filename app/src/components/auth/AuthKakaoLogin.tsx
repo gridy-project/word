@@ -1,7 +1,4 @@
-import {
-	login as KakaoLogin,
-	KakaoOAuthToken,
-} from "@react-native-seoul/kakao-login";
+import { login as KakaoLogin, KakaoOAuthToken } from "@react-native-seoul/kakao-login";
 import styled from "styled-components/native";
 
 const AuthKakaoLogin: React.FC<ILoginComponent> = ({ style, pressedStyle }) => {

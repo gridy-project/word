@@ -5,10 +5,10 @@ import { FlattenSimpleInterpolation } from "styled-components";
 
 const AuthNaverLogin: React.FC<ILoginComponent> = ({ style, pressedStyle }) => {
 	const iosKeys = {
-		kConsumerKey: "4IPPzQEeX13APm74K6Rf",
-		kConsumerSecret: "Kg7mwD26ZX",
-		kServiceAppName: "네이버_로그인_테스트",
-		kServiceAppUrlScheme: "kr.gridy.memory", // only for iOS
+		kConsumerKey: process.env.NAVER_LOGIN_CONSUMER_KEY ?? "",
+		kConsumerSecret: process.env.NAVER_LOGIN_CONSUMER_SECRET ?? "",
+		kServiceAppName: process.env.NAVER_LOGIN_APP_NAME ?? "",
+		kServiceAppUrlScheme: process.env.NAVER_LOGIN_APP_URL_SCHEME ?? "",
 	};
 	const onPress = () => {
 		NaverLogin.login(iosKeys, (err, token) => {
