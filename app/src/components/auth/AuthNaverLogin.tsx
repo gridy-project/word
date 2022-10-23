@@ -2,13 +2,14 @@ import { Pressable, Text } from "react-native";
 import { NaverLogin, getProfile } from "@react-native-seoul/naver-login";
 import styled from "styled-components/native";
 import { FlattenSimpleInterpolation } from "styled-components";
+import Config from "react-native-config";
 
 const AuthNaverLogin: React.FC<ILoginComponent> = ({ style, pressedStyle }) => {
 	const iosKeys = {
-		kConsumerKey: process.env.NAVER_LOGIN_CONSUMER_KEY ?? "",
-		kConsumerSecret: process.env.NAVER_LOGIN_CONSUMER_SECRET ?? "",
-		kServiceAppName: process.env.NAVER_LOGIN_APP_NAME ?? "",
-		kServiceAppUrlScheme: process.env.NAVER_LOGIN_APP_URL_SCHEME ?? "",
+		kConsumerKey: Config.NAVER_LOGIN_CONSUMER_KEY ?? "",
+		kConsumerSecret: Config.NAVER_LOGIN_CONSUMER_SECRET ?? "",
+		kServiceAppName: Config.NAVER_LOGIN_APP_NAME ?? "",
+		kServiceAppUrlScheme: Config.NAVER_LOGIN_APP_URL_SCHEME ?? "",
 	};
 	const onPress = () => {
 		NaverLogin.login(iosKeys, (err, token) => {

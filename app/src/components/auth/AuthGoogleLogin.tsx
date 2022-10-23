@@ -1,11 +1,12 @@
 import styled from "styled-components/native";
 import { GoogleSignin, statusCodes } from "@react-native-google-signin/google-signin";
+import Config from "react-native-config";
 
 const AuthGoogleLogin: React.FC<ILoginComponent> = ({ style, pressedStyle }) => {
 	const onPress = async () => {
 		GoogleSignin.configure({
-			iosClientId: process.env.GOOGLE_LOGIN_IOS_CLIENT_ID,
-			webClientId: process.env.GOOGLE_LOGIN_ANDROID_CLIENT_ID,
+			iosClientId: Config.GOOGLE_LOGIN_IOS_CLIENT_ID,
+			webClientId: Config.GOOGLE_LOGIN_ANDROID_CLIENT_ID,
 			offlineAccess: true,
 		});
 		console.log("GoogleLogin");
