@@ -1,0 +1,8 @@
+<resources>
+  <string name="app_name">memory</string>
+  <string name="expo_splash_screen_resize_mode" translatable="false">contain</string>
+  <string name="expo_splash_screen_status_bar_translucent" translatable="false">false</string>
+  <!-- Kakao Login Start -->
+  <string name="kakao_app_key">8e88c707211ee83fa4549781db887fcf</string>
+  <!-- kakao Login End -->
+</resources>
