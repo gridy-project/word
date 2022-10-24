@@ -14,7 +14,6 @@ model User {
   id            Int       @db.Int           @id @default(autoincrement())
   username      String    @db.Char(100)     @unique
   password      String    @db.Char(100)
-  passwordSalt  String    @db.Char(100)     @map("password_salt")
   createdAt     DateTime  @db.Timestamp(0)    @default(now()) @map("created_at")
   updatedAt     DateTime  @db.Timestamp(0)    @updatedAt @map("updated_at")
   Book Book[]

@@ -26,13 +26,4 @@ const api = {
 	},
 };
 
-function Hello (target, key, descriptior) {
-	func();
-}
-
-@Hello()
-function Test() {
-	console.log("test");
-}
-
 export default api;
