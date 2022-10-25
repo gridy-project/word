@@ -9,6 +9,7 @@ interface IResponseData {
 
 /**
  * Get Quiz List
+ * 
  */
 const getQuizList = async (req: Request, res: Response<IResponseData>) => {
 	const list = await word.getWordList();
